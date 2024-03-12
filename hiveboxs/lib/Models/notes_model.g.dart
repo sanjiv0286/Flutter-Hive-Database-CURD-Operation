@@ -17,8 +17,7 @@ class NotesModelAdapter extends TypeAdapter<NotesModel> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return NotesModel(
-      title: fields[0] as String,
-      description: fields[1] as String,
+      title: fields[0] as String, description: '',
     );
   }
 
